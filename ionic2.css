@@ -1,0 +1,117 @@
+/*Ionic Events CSS v2 */
+/* Global Prelim */
+html{font-size:10px;font-family:lato, arial;}
+body,div,section,article,aside,p,ul,li{margin:0;padding:0;border:none;line-height:100%;}
+a{text-decoration:none;}
+ul{list-style-type:none;}
+img{width:100%;border:none;}
+h2{font-size:2em;}
+
+/* Header */
+header{
+width:100%;
+height:7em;
+position:fixed;
+z-index:2;
+box-shadow: 0px 0px 7px #000000;
+background-color:rgba(255,255,255,.8);
+}
+
+#headernav{
+float:left;
+width:30%;
+text-align:left;
+}
+
+#logo{
+float:left;
+width:40%;
+text-align:center;
+margin:0 auto;
+}
+
+#ionic{
+font-size:4.5em;
+}
+
+#hashtag{
+font-size:2em;
+}
+
+#searchbox{
+float:left;
+width:30%;
+text-align:right;
+}
+
+/* Body */
+body{
+background-color:#DDDDDD;
+}
+
+section{
+font-size:1.6em;
+position:relative;
+}
+
+#banner{
+padding-top:80px;
+width:100%;
+height:400px;
+font-size:4.5em;
+background-image:url('lsc.jpg');
+background-position:center center;
+background-size:cover;
+background-repeat:no-repeat;
+color:#DDDDDD;
+}
+
+.wrapper{
+width:90%;
+margin:0 auto;
+max-width:1280px;
+}
+
+#features{
+float:left;
+width:64%;
+margin-right:2%;
+}
+
+.feature{
+margin-bottom:2%;
+box-shadow:0 0 5px #000000;
+}
+
+.lgfeat{
+width:100%;
+height:300px;
+}
+
+.smfeat{
+width:49%;
+float:left;
+height:230px;
+}
+
+#f2,#f4{
+margin-right:2%;
+}
+
+#today{
+float:right;
+width:34%;
+}
+
+.elist{
+}
+
+.elist li{
+margin-bottom:10px;
+box-shadow:0 0 5px #000000;
+}
+
+/* Footer */
+footer{
+
+}
