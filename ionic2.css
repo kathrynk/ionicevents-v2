@@ -19,7 +19,7 @@ h2{font-size:2em;}
 .cf:after{clear: both;}
 .cf {*zoom: 1;}/*IE6&7*/
 .wrapper{width:90%;margin:0 auto;max-width:1280px;}
-.hideonmobile1,.hideonmobile2{display:none;}
+.hideonmobile,.hideonmobile2{display:none;}
 
 /* Header */
 header{
@@ -33,7 +33,7 @@ background-color:#FFFFFF;
 
 #headernav{
 float:right;
-width:50%;
+width:30%;
 text-align:right;
 font-size:1.2em;
 margin-top:0.25em;
@@ -41,13 +41,12 @@ margin-top:0.25em;
 
 #logo{
 float:left;
-width:50%;
+width:70%;
 text-align:left;
 }
 
 #ionic{
 font-size:1.5em;
-width:1%;
 }
 
 #hashtag{
@@ -56,7 +55,7 @@ font-size:1.2em;
 
 #searchbox{
 float:right;
-width:50%;
+width:30%;
 text-align:right;
 clear:right;
 font-size:1.2em;
@@ -134,9 +133,17 @@ box-shadow:0 0 5px #000000;
 .hideonmobile1{
 display:inline;
 }
-#ionic{
-font-size:1.8em;
-width:auto;
+
+#headernav{
+width:50%;
+}
+
+#logo{
+width:50%;
+}
+
+#searchbox{
+width:50%;
 }
 }
 
