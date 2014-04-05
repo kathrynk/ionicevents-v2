@@ -8,7 +8,8 @@
   font-family: 'Lato';font-style:italic;font-weight:300;
   src: local('Lato Light Italic'), local('Lato-LightItalic'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/2HG_tEPiQ4Z6795cGfdivD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
 }
-html{font-size:10px;font-family:lato, arial;}
+
+html{font-family:lato, arial, sans-serif;color:#333333;}
 body,div,section,article,aside,p,ul,li{margin:0;padding:0;border:none;line-height:100%;}
 a{text-decoration:none;}
 ul{list-style-type:none;}
@@ -16,20 +17,13 @@ img{width:100%;border:none;}
 h2{font-size:2em;}
 .cf:before,.cf:after{content: " ";display: table;}
 .cf:after{clear: both;}
+.cf {*zoom: 1;}/*IE6&7*/
 .wrapper{width:90%;margin:0 auto;max-width:1280px;}
-
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-.cf {
-    *zoom: 1;
-}
 
 /* Header */
 header{
 width:100%;
-height:7em;
+height:4.4em;
 position:fixed;
 z-index:9999;
 box-shadow: 0px 0px 7px #000000;
@@ -50,11 +44,11 @@ margin:0 auto;
 }
 
 #ionic{
-font-size:4.5em;
+font-size:2.7em;
 }
 
 #hashtag{
-font-size:2em;
+font-size:1.4em;
 }
 
 #searchbox{
@@ -68,16 +62,24 @@ body{
 background-color:#DDDDDD;
 }
 
+#meat{
+position:relative;
+z-index:2;
+box-shadow:0 0 7px #000000;
+}
+
+#blk1{
+padding-top:2%;
+}
+
 section{
-font-size:1.6em;
 position:relative;
 }
 
 #banner{
-padding-top:80px;
+padding-top:4.4em;
 width:100%;
-height:400px;
-font-size:4.5em;
+height:25em;
 background-image:url('lsc.jpg');
 background-position:center center;
 background-size:cover;
@@ -85,16 +87,12 @@ background-repeat:no-repeat;
 color:#DDDDDD;
 }
 
-#meat{
-position:relative;
-z-index:2;
-box-shadow:0 0 7px #000000;
+#banner p{
+font-size:2.7em;
 }
 
-#features{
-float:left;
-width:64%;
-margin-right:2%;
+#features,#today{
+width:100%;
 }
 
 .feature{
@@ -104,16 +102,36 @@ box-shadow:0 0 5px #000000;
 
 .lgfeat{
 width:100%;
-height:300px;
+height:18.5em;
 }
 
 .smfeat{
 width:49%;
 float:left;
-height:230px;
+height:13.847em;
 }
 
 #f2,#f4{
+margin-right:2%;
+}
+
+.elist{
+}
+
+.elist li{
+height:6em;
+margin-bottom:2%;
+box-shadow:0 0 5px #000000;
+}
+
+@media all and (min-width: 56.25em){
+#blk1{
+padding-top:0;
+}
+
+#features{
+float:left;
+width:64%;
 margin-right:2%;
 }
 
@@ -122,16 +140,9 @@ float:right;
 width:34%;
 }
 
-.elist{
-}
-
 .elist li{
 height:6em;
-margin-bottom:10px;
+margin-bottom:3.764706%;
 box-shadow:0 0 5px #000000;
 }
-
-/* Footer */
-footer{
-
 }
