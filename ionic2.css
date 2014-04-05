@@ -31,16 +31,17 @@ background-color:#FFFFFF;
 }
 
 #headernav{
-float:left;
-width:30%;
-text-align:left;
+float:right;
+width:50%;
+text-align:right;
+font-size:1.5em;
+margin-top:0.5em;
 }
 
 #logo{
 float:left;
-width:40%;
-text-align:center;
-margin:0 auto;
+width:50%;
+text-align:left;
 }
 
 #ionic{
@@ -52,9 +53,12 @@ font-size:1.4em;
 }
 
 #searchbox{
-float:left;
-width:30%;
+float:right;
+width:50%;
 text-align:right;
+clear:right;
+font-size:1.5em;
+margin-top:0.5em;
 }
 
 /* Body */
@@ -124,6 +128,31 @@ margin-bottom:2%;
 box-shadow:0 0 5px #000000;
 }
 
+@media all and (min-width: 46em){
+#headernav{
+float:left;
+width:30%;
+text-align:left;
+}
+
+#logo{
+width:40%;
+text-align:center;
+margin:0 auto;
+}
+
+#hashtag{
+font-size:1.4em;
+}
+
+#searchbox{
+float:left;
+width:30%;
+text-align:right;
+clear:none;
+}
+}
+
 @media all and (min-width: 56.25em){
 #blk1{
 padding-top:0;
@@ -145,4 +174,14 @@ height:6em;
 margin-bottom:3.764706%;
 box-shadow:0 0 5px #000000;
 }
+}
+
+@media print{
+html{font-size:10px;}
+header{position:absolute;box-shadow:none;}
+#banner{display:none;}
+#meat{padding-top:4.4em;box-shadow:none;}
+.feature{box-shadow:none;border:1px solid;}
+#f2,#f4{margin-right:1%;}
+.elist li{box-shadow:none;border:1px solid;}
 }
