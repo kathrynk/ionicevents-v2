@@ -10,12 +10,11 @@
 	<title>Ionic Events</title>
 	<script>
 		var height = $(window).height(),
-			newsize = height,
-			fillwindow = parseInt(newsize) + 'px';
+			width = $(window).width();
 		function fadeheader() {
 			var scrollpos = $(document).scrollTop();
 			if(scrollpos<height){
-				var d = (scrollpos/(2*height))+0.75;
+				var d = (scrollpos/(4*400))+0.75;
 			}
 			else {
 				var d = 1;
@@ -48,10 +47,10 @@
 </header>
 
 <section id="banner" class="full">
-	<div class="center" style="max-width:800px;padding:0 40px;margin:0 auto;">
-		<p style="text-align:left;">Find things</p>
-		<p style="text-align:center;">to do in</p>
-		<p style="text-align:right;">Scranton</p>
+	<div id="bannertext" class="wrapper">
+		<p>Find things</p>
+		<p>to do in</p>
+		<p>Scranton</p>
 	</div>
 </section>
 
@@ -61,28 +60,43 @@
 			<h2>Featured Events</h2>
 			<div id="f1" class="feature lgfeat">
 				<div class="imgoverlay">
-					<p class="featuretext">Featured Event 1</p>
+					<div class="featuretext">
+						<p class="feattitle lgfeattitle">Event Title</p>
+						<p class="featuredetails">The hottest place in NEPA is about to get hotter.<br>4:30pm on Saturday, April 26th at the Grill</p>
+					</div>
 				</div>
 			</div>
 			<div id="f2" class="feature smfeat">
 				<img src="lsc.jpg">
 				<div class="imgoverlay">
-					<p class="featuretext">Featured Event 2</p>
+					<div class="featuretext">
+						<p class="feattitle smfeattitle">Event Title</p>
+						<p class="featuredetails">These are the event details.</p>
+					</div>
 				</div>
 			</div>
 			<div id="f3" class="feature smfeat">
 				<div class="imgoverlay">
-					<p class="featuretext">Featured Event 3</p>
+					<div class="featuretext">
+						<p class="feattitle smfeattitle">Event Title</p>
+						<p class="featuredetails">These are the event details.</p>
+					</div>
 				</div>
 			</div>
 			<div id="f4" class="feature smfeat">
 				<div class="imgoverlay">
-					<p class="featuretext">Featured Event 4</p>
+					<div class="featuretext">
+						<p class="feattitle smfeattitle">Event Title</p>
+						<p class="featuredetails">These are the event details.</p>
+					</div>
 				</div>
 			</div>
 			<div id="f5" class="feature smfeat">
 				<div class="imgoverlay">
-					<p class="featuretext">Featured Event 5</p>
+					<div class="featuretext">
+						<p class="feattitle smfeattitle">Event Title</p>
+						<p class="featuredetails">These are the event details.</p>
+					</div>
 				</div>
 			</div>
 		</section>

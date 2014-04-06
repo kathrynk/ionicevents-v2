@@ -42,11 +42,13 @@ margin-top:0.25em;
 #logo{
 float:left;
 width:70%;
+padding-top:.05em;
 text-align:left;
 }
 
 #ionic{
-font-size:1.8em;
+
+font-size:1.7em;
 }
 
 #hashtag{
@@ -85,15 +87,24 @@ position:relative;
 padding-top:3.2em;
 width:100%;
 height:15em;
-background-image:url('lsc.jpg');
-background-position:center center;
+background-image:url('ec.jpg');
+background-position:left center;
 background-size:cover;
 background-repeat:no-repeat;
 color:#DDDDDD;
 }
 
-#banner p{
+#bannertext{
+margin-top:8em;
+}
+
+#bannertext p{
 font-size:2.7em;
+text-align:center;
+width:30%;
+max-width:8.888em;
+min-width:6.94em;
+text-shadow: 2px 2px 4px #222222;
 }
 
 #features,#today{
@@ -120,20 +131,24 @@ top:0;
 height:100%;
 width:100%;
 background: rgba(0,0,0,0.6);
-background: -webkit-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.5)); /*Safari 5.1-6*/
-background: -o-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.5)); /*Opera 11.1-12*/
-background: -moz-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.5)); /*Fx 3.6-15*/
-background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.5)); /*Standard*/
+background: -webkit-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.7)); /*Safari 5.1-6*/
+background: -o-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.7)); /*Opera 11.1-12*/
+background: -moz-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.7)); /*Fx 3.6-15*/
+background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.7)); /*Standard*/
 z-index:3;
 }
 
 .featuretext{
 position:absolute;
-bottom:0;
-right:0;
+bottom:5px;
+right:5px;
 text-align:right;
 color:#FFFFFF;
 z-index:5;
+}
+
+.featuretext p{
+line-height:120%;
 }
 
 .lgfeat{
@@ -145,6 +160,18 @@ height:18.5em;
 width:49%;
 float:left;
 height:13.847em;
+}
+
+.feattitle{
+
+}
+
+.lgfeattitle{
+font-size:2em;
+}
+
+.smfeattitle{
+font-size:1.4em;
 }
 
 #f2,#f4{
@@ -167,6 +194,7 @@ width:50%;
 
 #logo{
 width:50%;
+padding-top:0;
 }
 
 #searchbox{
