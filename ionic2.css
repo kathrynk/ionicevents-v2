@@ -63,6 +63,7 @@ h2{font-size:2em;}
 header{
 width:100%;
 height:auto;
+min-height:3.2em;
 position:fixed;
 z-index:9999;
 box-shadow: 0px 0px 7px #000000;
@@ -75,6 +76,49 @@ width:2em;
 text-align:right;
 font-size:1.5em;
 margin-top:0.6em;
+}
+
+.dropdownbutton:hover {
+	cursor:pointer;
+}
+
+.dropdown ul {
+	background:#FFFFFF;
+	margin:0;
+	padding:0;
+	width:100%;
+	position:absolute;
+	left:0;
+	top:3.2em;
+	z-index:9999;
+	display:none;
+	box-shadow: 0 7px 7px -7px #333333;
+}
+
+.dropdown ul li {
+	display:block;
+	margin:0 auto;
+	font-size:1.2em;
+}
+
+.dropdown span {
+	display:block;
+	margin:4px 0px 4px 0px;
+	height:2px;
+	background:#333333;
+	width:25px;
+}
+
+.dropdown ul li a {
+	display:block;
+	width:100%;
+	text-align:center;
+	padding:10px 0px 10px 0px;
+	border-bottom:1px solid #dedede;
+	color:#333333;
+}
+.dropdown ul li:first-child a {
+	border-top:1px solid #dedede;
 }
 
 #logo{
@@ -222,23 +266,15 @@ margin-bottom:2%;
 box-shadow:0 0 5px #000000;
 }
 
-@media all and (min-width: 23em){
+@media all and (min-width: 22em){
 header{
 height:3.2em;
 }
-
-/*#headernav{
-width:25%;
-}*/
 
 #logo{
 width:50%;
 padding-top:0;
 }
-
-/*#searchbox{
-width:25%;
-}*/
 }
 
 @media all and (min-width: 34em){
@@ -248,6 +284,10 @@ height:4.4em;
 
 #headernav{
 margin-top:1em;
+}
+
+.dropdown ul {
+	top:4.4em;
 }
 
 #ionic{
@@ -344,76 +384,4 @@ header{position:absolute;box-shadow:none;}
 .feature{box-shadow:none;border:1px solid;}
 #f2,#f4{margin-right:1%;}
 .elist li{box-shadow:none;border:1px solid;}
-}
-
-/*
-
-Responsive Mobile Menu v1.0
-Plugin URI: responsivemobilemenu.com
-
-Author: Sergio Vitov
-Author URI: http://xmacros.com
-
-License: CC BY 3.0 http://creativecommons.org/licenses/by/3.0/
-
-*/
-
-.menu {
-	display:inline-block;
-	text-align:center;
-	vertical-align:top;
-}
-
-.menu ul {
-	display:inline;
-	width:auto;
-	margin:0 auto;
-	list-style:none;
-}
-
-.dropdownbutton:hover {
-	cursor:pointer;
-}
-
-.dropdown{
-}
-
-.dropdown ul {
-	background:#FFFFFF;
-	margin:0;
-	padding:0;
-	width:100%;
-	position:absolute;
-	left:0;
-	top:4.4em;
-	z-index:9999;
-	display:none;
-	box-shadow: 0 7px 7px -7px #333333;
-}
-
-.dropdown ul li {
-	display:block;
-	margin:0 auto;
-}
-
-/* MINIMAL STYLE */
-
-.dropdown span {
-	display:block;
-	margin:4px 0px 4px 0px;
-	height:2px;
-	background:#333333;
-	width:25px;
-}
-
-.dropdown ul li a {
-	display:block;
-	width:100%;
-	text-align:center;
-	padding:10px 0px 10px 0px;
-	border-bottom:1px solid #dedede;
-	color:#333333;
-}
-.dropdown ul li:first-child a {
-	border-top:1px solid #dedede;
 }
