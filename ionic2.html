@@ -7,32 +7,26 @@
 	<meta name="viewport" content="width=device-width, maximum-scale=1">
 	<link rel="stylesheet" type="text/css" href="ionic2.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="script.js"></script>
 	<title>Ionic Events</title>
-	<script>
-		var height = $(window).height(),
-			width = $(window).width();
-		function fadeheader() {
-			var scrollpos = $(document).scrollTop();
-			if(scrollpos<height){
-				var d = (scrollpos/(4*(400)))+0.75;
-			}
-			else {
-				var d = 1;
-			}
-		  document.getElementsByTagName('header')[0].style.background = "rgba(255,255,255,"+d+")";
-		}
-		$(document).scroll(function(){fadeheader();});
-		$(document).ready(function(){fadeheader();});
-	</script>
 </head>
 
 <body>
 
 
 <header>
+	<div class="dropdown">
+		<ul id="navmenu">
+			<li><a href='#home'>Search</a></li>
+			<li><a href='#about-me'>Categories</a></li>
+			<li><a href='index2.html'>Test</a></li>
+			<li><a href='submit.html'>Submit</a></li>
+			<li><a href='about.html'>About</a></li>
+		</ul>
+	</div>
 	<div class="wrapper">
 		<nav id="headernav">
-			<span class="hideonmobile">home | about | </span><span aria-hidden="true" class="icon-menu"></span>
+			<span class="dropdownbutton menuclosed"><span aria-hidden="true" class="icon-menu"></span><span class="hideonmobile" style="vertical-align:top;">menu</span></span>
 		</nav>
 	
 		<div id="logo">
@@ -41,7 +35,7 @@
 		</div>
 	
 		<form id="searchbox">
-			<span aria-hidden="true" class="icon-search""></span>
+			<span aria-hidden="true" class="icon-search""></span><span class="hideonmobile" style="">search</span>
 		</form>
 	</div>
 </header>
