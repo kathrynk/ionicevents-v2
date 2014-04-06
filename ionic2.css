@@ -95,16 +95,19 @@ color:#DDDDDD;
 }
 
 #bannertext{
-margin-top:8em;
+margin-top:3.2em;
 }
 
 #bannertext p{
+color:#660000;
 font-size:2.7em;
 text-align:center;
 width:30%;
 max-width:8.888em;
 min-width:6.94em;
-text-shadow: 2px 2px 4px #222222;
+/*text-shadow: 2px 2px 4px #222222;*/
+background:rgba(255,255,255,.6);
+box-shadow: 0 0 5px #333333;
 }
 
 #features,#today{
@@ -232,6 +235,10 @@ margin-top:0.5em;
 #banner{
 padding-top:4.4em;
 height:25em;
+}
+
+#bannertext{
+margin-top:8em;
 }
 }
 
