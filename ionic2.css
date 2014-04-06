@@ -9,6 +9,44 @@
   src: local('Lato Light Italic'), local('Lato-LightItalic'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/2HG_tEPiQ4Z6795cGfdivD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
 }
 
+@font-face {
+  font-family: 'ionic-min';
+  src: url('font/ionic-min.eot?85465959');
+  src: url('font/ionic-min.eot?85465959#iefix') format('embedded-opentype'),
+       url('font/ionic-min.woff?85465959') format('woff'),
+       url('font/ionic-min.ttf?85465959') format('truetype'),
+       url('font/ionic-min.svg?85465959#ionic-min') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "ionic-min";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* font-size: 120%; */
+}
+.icon-search:before { content: '\e801'; } /* '' */
+.icon-menu:before { content: '\e800'; } /* '' */
+/*
+Entypo
+   Copyright (C) 2012 by Daniel Bruce
+
+   Author:    Daniel Bruce
+   License:   CC BY-SA (http://creativecommons.org/licenses/by-sa/2.0/)
+   Homepage:  http://www.entypo.com
+*/
+
 html{font-family:lato, arial, sans-serif;color:#660000;}
 body,div,section,article,aside,p,ul,li{margin:0;padding:0;border:none;line-height:100%;}
 a{text-decoration:none;}
@@ -33,10 +71,10 @@ background-color:#FFFFFF;
 
 #headernav{
 float:right;
-width:30%;
+width:2em;
 text-align:right;
 font-size:1.2em;
-margin-top:0.25em;
+margin-top:0.75em;
 }
 
 #logo{
@@ -47,7 +85,6 @@ text-align:left;
 }
 
 #ionic{
-
 font-size:1.7em;
 }
 
@@ -57,26 +94,16 @@ font-size:1.2em;
 
 #searchbox{
 float:right;
-width:30%;
+width:2em;
 text-align:right;
-clear:right;
+/*clear:right;*/
 font-size:1.2em;
-margin-top:0.25em;
+margin-top:0.75em;
 }
 
 /* Body */
 body{
 background-color:#DDDDDD;
-}
-
-#meat{
-position:relative;
-z-index:2;
-box-shadow:0 0 7px #000000;
-}
-
-#blk1{
-padding-top:2%;
 }
 
 section{
@@ -106,8 +133,18 @@ width:30%;
 max-width:8.888em;
 min-width:6.94em;
 /*text-shadow: 2px 2px 4px #222222;*/
-background:rgba(255,255,255,.6);
-box-shadow: 0 0 5px #333333;
+background:rgba(255,255,255,.8);
+box-shadow: 0 0 7px #FFFFFF;
+}
+
+#meat{
+position:relative;
+z-index:2;
+box-shadow:0 0 7px #000000;
+}
+
+#blk1{
+padding-top:2%;
 }
 
 #features,#today{
@@ -186,32 +223,28 @@ box-shadow:0 0 5px #000000;
 }
 
 @media all and (min-width: 23em){
-#headernav{
-width:50%;
-}
+/*#headernav{
+width:25%;
+}*/
 
 #logo{
 width:50%;
 padding-top:0;
 }
 
-#searchbox{
-width:50%;
-}
+/*#searchbox{
+width:25%;
+}*/
 }
 
 @media all and (min-width: 34em){
-.hideonmobile{
-display:inline;
-}
-
 header{
 height:4.4em;
 }
 
 #headernav{
 font-size:1.5em;
-margin-top:0.5em;
+margin-top:1em;
 }
 
 #ionic{
@@ -224,7 +257,7 @@ font-size:1.4em;
 
 #searchbox{
 font-size:1.5em;
-margin-top:0.5em;
+margin-top:1em;
 }
 
 #banner{
@@ -249,11 +282,14 @@ margin-right:2%;
 }
 
 @media all and (min-width: 46em){
+.hideonmobile{
+display:inline;
+}
+
 #headernav{
 float:left;
 width:30%;
 text-align:left;
-margin-top:1em;
 }
 
 #logo{
@@ -266,7 +302,6 @@ margin:0 auto;
 float:left;
 width:30%;
 clear:none;
-margin-top:1em;
 }
 }
 
