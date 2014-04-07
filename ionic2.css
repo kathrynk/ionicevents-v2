@@ -19,7 +19,7 @@
   font-weight: normal;
   font-style: normal;
 }
- [class^="icon-"]:before, [class*=" icon-"]:before {
+[class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "ionic-min";
   font-style: normal;
   font-weight: normal;
@@ -85,6 +85,9 @@ position:relative;
 
 .dropdownbutton:hover,.drawerbutton:hover{
 	cursor:pointer;
+}
+
+.notouch .dropdownbutton:hover,.notouch .drawerbutton:hover{
 	color:#0971B2;
 }
 

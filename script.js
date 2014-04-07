@@ -1,17 +1,22 @@
-		var height = $(window).height(),
-			width = $(window).width();
-		function fadeheader() {
-			var scrollpos = $(document).scrollTop();
-			if(scrollpos<400){
-				var d = (scrollpos/(4*(400)))+0.75;
-			}
-			else {
-				var d = 1;
-			}
-		  document.getElementsByTagName('header')[0].style.background = "rgba(255,255,255,"+d+")";
-		}
-		$(document).scroll(function(){fadeheader();});
-		$(document).ready(function(){fadeheader();});
+var height = $(window).height(),
+	width = $(window).width();
+function fadeheader() {
+	var scrollpos = $(document).scrollTop();
+	if(scrollpos<400){
+		var d = (scrollpos/(4*(400)))+0.75;
+	}
+	else {
+		var d = 1;
+	}
+  document.getElementsByTagName('header')[0].style.background = "rgba(255,255,255,"+d+")";
+}
+$(document).scroll(function(){fadeheader();});
+$(document).ready(function(){
+fadeheader();
+if (!("ontouchstart" in document.documentElement)) {
+document.documentElement.className += " no-touch";
+}
+});
 
 $(function() {
 	$('.dropdownbutton').click(function(){
