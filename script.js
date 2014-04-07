@@ -21,10 +21,6 @@ document.documentElement.className += " no-touch";
 }
 });
 
-$(window).load(function(){
-var bannerht = $('#banner').outerHeight(true);alert(banner);});
-
-
 $(function() {
 	$('.dropdownbutton').click(function(){
 	 	if ( $(this).is(".menuclosed")) {
