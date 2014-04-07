@@ -84,11 +84,11 @@ position:relative;
 }
 
 .dropdownbutton:hover,.drawerbutton:hover{
-	cursor:pointer;
+cursor:pointer;
 }
 
-.notouch .dropdownbutton:hover,.notouch .drawerbutton:hover{
-	color:#0971B2;
+.no-touch .dropdownbutton:hover,.no-touch .drawerbutton:hover{
+color:#0971B2;
 }
 
 .dropdownbutton.menuopen,.drawerbutton.menuopen{
@@ -169,6 +169,7 @@ border-bottom:1px solid #dedede;
 font-size:1em;
 font-family:lato, arial, sans-serif;
 text-align:center;
+outline:none;
 }
 
 /* Body */
