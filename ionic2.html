@@ -17,16 +17,19 @@
 <header>
 	<div class="dropdown">
 		<ul id="navmenu">
-			<li><a href='#home'>Search</a></li>
 			<li><a href='#about-me'>Categories</a></li>
 			<li><a href='index2.html'>Test</a></li>
 			<li><a href='submit.html'>Submit</a></li>
 			<li><a href='about.html'>About</a></li>
+			<li><form method="get"><input class="searchinput" name="s" type="textbox" placeholder="search for events" x-webkit-speech="x-webkit-speech" onwebkitspeechchange="this.form.submit()" /></form></li>
 		</ul>
 	</div>
 	<div class="wrapper">
 		<nav id="headernav">
-			<span class="dropdownbutton menuclosed"><span aria-hidden="true" class="icon-menu"></span><span class="hideonmobile" style="vertical-align:top;">menu</span></span>
+			<span class="dropdownbutton menuclosed">
+				<span aria-hidden="true" class="icon-menu"></span>
+				<span class="hideonmobile" style="vertical-align:top;">menu</span>
+			</span>
 		</nav>
 	
 		<div id="logo">
@@ -34,9 +37,12 @@
 			<p id="hashtag">#scranton</p>
 		</div>
 	
-		<form id="searchbox">
-			<span aria-hidden="true" class="icon-search""></span><span class="hideonmobile" style="">search</span>
-		</form>
+		<div id="searchbox">
+			<span class="drawerbutton menuclosed">
+				<span aria-hidden="true" class="icon-search"></span>
+				<span class="hideonmobile">search</span>
+			</span>
+		</div>
 	</div>
 </header>
 
