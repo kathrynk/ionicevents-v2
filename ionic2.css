@@ -65,7 +65,7 @@ width:100%;
 height:auto;
 min-height:3.2em;
 position:fixed;
-z-index:9999;
+z-index:999;
 box-shadow: 0px 0px 7px #000000;
 background-color:#FFFFFF;
 }
