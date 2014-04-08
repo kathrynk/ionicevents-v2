@@ -72,7 +72,7 @@ background-color:#FFFFFF;
 
 #headernav{
 float:right;
-width:2em;
+width:auto;
 text-align:right;
 font-size:1.5em;
 margin-top:0.6em;
@@ -102,7 +102,7 @@ color:#0971B2;
 	width:100%;
 	position:absolute;
 	left:0;
-	top:3.2em;
+	top:2em;
 	z-index:9999;
 	display:none;
 	box-shadow: 0 7px 7px -7px #333333;
@@ -141,7 +141,7 @@ color:#0971B2;
 
 #logo{
 float:left;
-width:60%;
+width:auto;
 padding-top:.05em;
 text-align:left;
 }
@@ -152,15 +152,6 @@ font-size:1.7em;
 
 #hashtag{
 font-size:1.2em;
-}
-
-#searchbox{
-float:right;
-width:2em;
-text-align:right;
-/*clear:right;*/
-font-size:1.5em;
-margin-top:0.6em;
 }
 
 input:not([type=submit]):not([type=file]) {
@@ -272,10 +263,6 @@ float:left;
 height:8em;
 }
 
-.feattitle{
-
-}
-
 .lgfeattitle{
 font-size:2em;
 }
@@ -297,11 +284,6 @@ box-shadow:0 0 5px #000000;
 header{
 height:3.2em;
 }
-
-#logo{
-width:50%;
-padding-top:0;
-}
 }
 
 @media all and (min-width: 34em){
@@ -314,7 +296,7 @@ margin-top:1em;
 }
 
 .dropdown ul {
-	top:4.4em;
+	top:2.9em;
 }
 
 #ionic{
@@ -323,10 +305,6 @@ font-size:2.7em;
 
 #hashtag{
 font-size:1.4em;
-}
-
-#searchbox{
-margin-top:1em;
 }
 
 #banner{
@@ -356,21 +334,12 @@ display:inline;
 }
 
 #headernav{
-float:left;
-width:30%;
-text-align:left;
+width:350px;
 }
 
-#logo{
-width:40%;
-text-align:center;
-margin:0 auto;
-}
-
-#searchbox{
-float:left;
-width:30%;
-clear:none;
+.dropdown ul{
+position:relative;
+top:.9em;
 }
 }
 
