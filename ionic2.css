@@ -279,16 +279,16 @@ margin-bottom:2%;
 border:bottom
 }
 
-.elist li img{
+/*.elist li img{
 width:28%;
 margin-right:3%;
 float:left;
 box-shadow: 0 0 7px #000000;
-}
+}*/
 
 .elist li p{
-float:right;
-width:69%;
+/*float:right;
+width:69%;*/
 }
 
 .todaydetails{
