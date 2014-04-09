@@ -338,6 +338,7 @@ position:absolute;
 top:2.9em;
 width:15em;
 left:auto;
+right:5%;
 }
 
 .dropdown ul li {
@@ -368,7 +369,12 @@ box-shadow:0 0 5px #000000;
 }
 }
 
-@media all and (min-width: 80em){
+@media all and (min-width: 88.88888em){
+.dropdown ul{
+position:relative;
+top:0.85em;
+right:0;
+}
 }
 
 @media screen and (orientation:landscape) and (max-height:25em){
