@@ -33,11 +33,13 @@
 		</nav>
 	
 		<div id="logo">
-			<div id="logoimg">&nbsp;</div>
-			<div id="logofix">
-				<p id="ionic">Ionic Events</p>
-				<p id="hashtag">#scranton</p>
-			</div>
+			<a href="http://ionicevents.com/">
+				<div id="logoimg">&nbsp;</div>
+				<div id="logofix">
+					<p id="ionic">Ionic Events</p>
+					<p id="hashtag">#scranton</p>
+				</div>
+			</a>
 		</div>
 	</div>
 </header>
@@ -107,13 +109,15 @@
 			<ul class="elist">
 				<hr class="line" />
 				<li class="eitem cf">
-					<p class="todaytitle">Today Event #1</p>
-					<p class="todaydetails">Some details about it.</p>
+					<p class="todaytitle" style="">The Great Race</p>
+					<p class="todaydetails todayloc">5:30pm at the Vintage Theater</p>
+					<p class="todaydetails todaydesc">Some details about it. </p>
 				</li>
 				<hr class="line" />
 				<li class="eitem cf">
 					<p class="todaytitle">Today Event #2</p>
-					<p class="todaydetails">Some details about it.</p>
+					<p class="todaydetails todayloc">5:30pm at the Vintage Theater</p>
+					<p class="todaydetails todaydesc">Some details about it.</p>
 				</li>
 				<hr class="line" />
 			</ul>
@@ -124,7 +128,15 @@
 <footer>
 
 </footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-43556130-2', 'ionicevents.com');
+  ga('send', 'pageview');
+</script>
 </body>
 
 </html>
