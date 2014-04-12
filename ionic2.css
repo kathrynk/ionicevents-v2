@@ -49,7 +49,8 @@ Entypo
 
 html{font-family:lato, arial, sans-serif;color:#660000;}
 body,div,section,article,aside,p,ul,li{margin:0;padding:0;border:none;line-height:100%;}
-a{text-decoration:none;color:#660000;}
+a{text-decoration:none;color:#660000;-webkit-transition:color .5s;transition:color .5s;}
+a:hover{color:#0971B2;}
 ul{list-style-type:none;}
 img{width:100%;border:none;}
 h2{font-size:2em;font-weight:normal;}
@@ -82,6 +83,8 @@ margin-top:0.6em;
 .dropdownbutton,.drawerbutton{
 display:block;
 position:relative;
+-webkit-transition:color .5s;
+transition:color .5s;
 }
 
 .dropdownbutton:hover,.drawerbutton:hover{
@@ -161,8 +164,22 @@ display:inline-block;
 font-size:1.7em;
 }
 
-#hashtag{
+#hashtag,#backnav{
 font-size:1.2em;
+}
+
+#backnav img{
+-ms-transform: rotate(180deg); /* IE 9 */
+-webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+transform: rotate(180deg);
+-webkit-transition:-webkit-transform 1s;
+transition:transform 1s;
+}
+
+#backnav img.active{
+-ms-transform: rotate(270deg); /* IE 9 */
+-webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
+transform: rotate(270deg);
 }
 
 input:not([type=submit]):not([type=file]) {
@@ -184,6 +201,7 @@ position:relative;
 }
 
 #banner{
+position:relative;
 padding-top:3.2em;
 width:100%;
 height:15em;
@@ -192,6 +210,17 @@ background-position:left center;
 background-size:cover;
 background-repeat:no-repeat;
 color:#DDDDDD;
+}
+
+#bannereventtext{
+position:absolute;
+bottom:5px;
+font-size:2em;
+font-weight:300;
+text-align:center;
+color:#FFFFFF;
+width:100%;
+z-index:5;
 }
 
 #bannertext{
@@ -358,7 +387,7 @@ width:4.3em;
 font-size:2.7em;
 }
 
-#hashtag{
+#hashtag,#backnav{
 font-size:1.4em;
 }
 
@@ -369,6 +398,10 @@ height:25em;
 
 #bannertext{
 margin-top:8em;
+}
+
+#bannereventtext{
+font-size:2.7em;
 }
 
 .smfeat{
