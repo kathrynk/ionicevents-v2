@@ -10,18 +10,6 @@ document.documentElement.className += " no-touch";
 });
 
 $(function() {
-	$('a[href*=#]:not([href=#])').click(function() {
-		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-		  var target = $(this.hash);
-		  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-		  if (target.length) {
-			$('html,body').animate({
-			  scrollTop: target.offset().top
-			}, 1000);
-			return false;
-		  }
-		}
-	});
 	$('.dropdownbutton').click(function(){
 	 	if ( $(this).is(".menuclosed")) {
 		 	 $(this).removeClass("menuclosed");
@@ -64,12 +52,12 @@ function fadeheader() {
 		var d = 1;
 	}
 	if(scrollpos>banner){
-		backnav.find('img').addClass("active");
+		backnav.find('svg').attr("class","active");
 		backnav.find('span').html('<a href="#top">Top</a>');
 	}
 	else {
-		if(backnav.find('img').hasClass('active')){
-			backnav.find('img').removeClass("active");
+		if(backnav.find('svg').attr("class","active")){
+			backnav.find('svg').attr("class","");
 			backnav.find('span').html('<a href="javascript:history.go(-1)">Back</a>');
 		}
 	}
