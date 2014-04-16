@@ -243,12 +243,8 @@ margin-top:3.2em;
 
 #bannertext p{
 color:#EEEEEE;
-margin-left:5%;
 font-size:2.7em;
 text-align:center;
-width:30%;
-max-width:8.888em;
-min-width:6.94em;
 text-shadow: 2px 2px 4px #222222;
 /*background:rgba(255,255,255,.8);*/
 }
@@ -403,6 +399,8 @@ width:3.1em;
 background-image:url('images/logosmall.png');
 background-size:cover;
 }
+
+
 }
 
 @media all and (min-width: 34em){
@@ -438,6 +436,13 @@ height:25em;
 
 #bannertext{
 margin-top:8em;
+}
+
+#bannertext p{
+width:30%;
+max-width:8.888em;
+min-width:6.94em;
+margin-left:5%;
 }
 
 #bannereventtext{
