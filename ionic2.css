@@ -242,15 +242,15 @@ margin-top:3.2em;
 }
 
 #bannertext p{
-color:#660000;
+color:#EEEEEE;
+margin-left:5%;
 font-size:2.7em;
 text-align:center;
 width:30%;
 max-width:8.888em;
 min-width:6.94em;
-/*text-shadow: 2px 2px 4px #222222;*/
-background:rgba(255,255,255,.8);
-box-shadow: 0 0 7px #FFFFFF;
+text-shadow: 2px 2px 4px #222222;
+/*background:rgba(255,255,255,.8);*/
 }
 
 #meat{
@@ -291,9 +291,11 @@ background: -o-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.7)); /*Opera 11.1-12*/
 background: -moz-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.7)); /*Fx 3.6-15*/
 background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.7)); /*Standard*/
 z-index:3;
+-webkit-transition:background 1s;
+transition:background 1s;
 }
 
-.imgoverlay:hover{
+.feature .imgoverlay:hover{
 background:none;
 }
 
